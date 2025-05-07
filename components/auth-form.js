@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useFormState } from 'react-dom';
 import {signup} from '@/actions/auth-actions'
 
-export default async  function AuthForm() {
+export default  function AuthForm() {
 
   const [formState , formAction]=useFormState(signup,{})
   return (
